@@ -7,23 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="header">
     <h1>Tic Tac Toe</h1>
-    <div id="board" class="board">
-      <div class="row">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+  </div>
+  <div class="container">
+    <div class="game-container">
+      <div id="board" class="board">
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
       </div>
-      <div class="row">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-      </div>
-      <div class="row">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+      <div class="scoreboard">
+        <h2>Scoreboard</h2>
+        <table>
+          <tr>
+            <th>X Wins</th>
+            <th>O Wins</th>
+          </tr>
+          <tr>
+            <td id="xWins">0</td>
+            <td id="oWins">0</td>
+          </tr>
+        </table>
+        <div class="buttons">
+          <button id="restartGame">Restart Game</button>
+          <button id="restartScore">Restart Score</button>
+        </div>
       </div>
     </div>
   </div>
